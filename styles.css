@@ -46,7 +46,9 @@ body{
 .addbtn{
     position: absolute;
     right: 0.5em;
-    top: 4.5em;
+    top: 3.5em;
+    border: 1px solid #8B8B8B;
+    border-radius: 50%;
     
 }
 
