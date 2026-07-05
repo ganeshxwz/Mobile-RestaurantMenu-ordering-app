@@ -1,0 +1,67 @@
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+    border: 1px solid black;
+    height: 95vh;
+    width: 100%;
+    max-width: 380px;
+    
+}
+
+.head-section{
+    height: 25vh;   
+}
+
+.head-img{
+    height: 100%;
+    width: 100%;
+    background-image: url('images/backgrouondimg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.head-txt{
+    color: white;
+    display: inline-block;
+    padding: 8%;
+}
+
+.emoji{
+    padding: 10px 0px;
+    font-size: 5em;
+}
+
+#menuitems{
+    position: relative;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+   
+}
+
+.addbtn{
+    position: absolute;
+    right: 0.5em;
+    top: 4.5em;
+    
+}
+
+.itemname{
+     font-family: "Smythe", system-ui;
+     margin-bottom: 10px;
+}
+
+.details{
+    font-size: 1em;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    
+}
+
+.ingredients{
+    color:#8B8B8B ;
+}
