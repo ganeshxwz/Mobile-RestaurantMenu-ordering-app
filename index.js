@@ -1,10 +1,21 @@
 import { menuArray } from "./data.js"
 const menu = document.getElementById("menu")
 
+
+
+
+
+
+
+
+
+
+
+
+
 function getmenuhtml(menuarr){
     let html = menuarr.map(item => {
-        return `
-        <div id="menuitems">
+        return `<div id="menuitems">
              <div class= "emoji">
                 ${item.emoji}
              </div>
@@ -14,8 +25,7 @@ function getmenuhtml(menuarr){
                 <h4 class="details">$${item.price}</h4>
             </div> 
             <button class="addbtn">+</button>   
-        </div>
-        `
+        </div>`
     }).join('');
     return html  
 }

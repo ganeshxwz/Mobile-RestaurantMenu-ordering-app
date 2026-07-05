@@ -32,6 +32,7 @@ body{
 
 .emoji{
     padding: 10px 0px;
+    margin-left: -10px;
     font-size: 5em;
 }
 
@@ -47,9 +48,10 @@ body{
     position: absolute;
     right: 0.5em;
     top: 3.5em;
-    border: 1px solid #8B8B8B;
+    border: 1px solid #dedede;
     border-radius: 50%;
-    
+    font-size: 1.1em;
+    padding: 5px 10px;
 }
 
 .itemname{
@@ -66,4 +68,5 @@ body{
 
 .ingredients{
     color:#8B8B8B ;
+    font-size: 0.8em;
 }
