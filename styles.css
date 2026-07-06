@@ -88,12 +88,10 @@ body{
 #orderspage h4{
     margin-bottom: 5%;
     padding: 10px 0 5px 0;
-
-    color: wheat;
+    color: white;
     background-color: #16db99;
     height: 30px;
     text-align: center;
-    border: 1px solid green;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
