@@ -1,6 +1,7 @@
 import { menuArray } from "./data.js"
 const menu = document.getElementById("menu")
-
+const orders = document.getElementById("orderspage")
+const ul = document.getElementById("ul")
 
 document.addEventListener("click", function(e){
     if(e.target.dataset.id){
@@ -10,15 +11,24 @@ document.addEventListener("click", function(e){
 
 function handleaddeditem(itemid){
     const targetitem = menuArray.filter(function(item){
-        return item.id === itemid
+        return item.id === Number(itemid)
     })
+    renderorder(targetitem)
 }
 
 
 
 
-function order(){
-    
+function renderorder(items){
+    let html = ""
+   orders.style.display = "block"
+   items.forEach(item => {
+       html +=  `<div class="order-items">
+                <p>${item.name}</p>
+                <p>$${item.price}</p>
+                </div>`
+   });
+   ul.innerHTML += html
 }
 
 

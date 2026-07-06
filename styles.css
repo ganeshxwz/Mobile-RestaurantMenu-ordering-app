@@ -70,3 +70,29 @@ body{
     color:#8B8B8B ;
     font-size: 0.8em;
 }
+
+#orderspage{
+    /* display: none; */
+    font-family: "Smythe",system-ui;
+    text-align: center;
+    border: 1px solid black;
+   
+}
+
+#orderspage h5{
+    margin-top: 0%;
+    font-size: 1.5em;
+    
+}
+
+#orderspage h4{
+    margin-bottom: 5%;
+    border: 1px solid green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.order-items{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 17px;
+}
