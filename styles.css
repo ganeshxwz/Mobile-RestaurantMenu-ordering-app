@@ -5,7 +5,7 @@ body{
 }
 
 #container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 95vh;
     width: 100%;
     max-width: 380px;
@@ -72,11 +72,11 @@ body{
 }
 
 #orderspage{
-    /* display: none; */
+    display: none;    /* i */
     font-family: "Smythe",system-ui;
     text-align: center;
-    border: 1px solid black;
-   
+    /* border: 1px solid black; */
+
 }
 
 #orderspage h5{
@@ -87,6 +87,12 @@ body{
 
 #orderspage h4{
     margin-bottom: 5%;
+    padding: 10px 0 5px 0;
+
+    color: wheat;
+    background-color: #16db99;
+    height: 30px;
+    text-align: center;
     border: 1px solid green;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

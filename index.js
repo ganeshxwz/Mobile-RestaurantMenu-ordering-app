@@ -26,7 +26,8 @@ function renderorder(items){
        html +=  `<div class="order-items">
                 <p>${item.name}</p>
                 <p>$${item.price}</p>
-                </div>`
+                </div>
+                `
    });
    ul.innerHTML += html
 }
