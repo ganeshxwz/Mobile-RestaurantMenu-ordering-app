@@ -2,6 +2,9 @@ import { menuArray } from "./data.js"
 const menu = document.getElementById("menu")
 const orders = document.getElementById("orderspage")
 const ul = document.getElementById("ul")
+const totalel = document.getElementById("total")
+let orderitems = []
+
 
 document.addEventListener("click", function(e){
     if(e.target.dataset.id){
@@ -13,10 +16,10 @@ function handleaddeditem(itemid){
     const targetitem = menuArray.filter(function(item){
         return item.id === Number(itemid)
     })
+        orderitems.push(...targetitem)
     renderorder(targetitem)
+    rendertotal()
 }
-
-
 
 
 function renderorder(items){
@@ -31,8 +34,6 @@ function renderorder(items){
    });
    ul.innerHTML += html
 }
-
-
 
 function getmenuhtml(menuarr){
     let html = menuarr.map(item => {
@@ -53,6 +54,13 @@ function getmenuhtml(menuarr){
 
 function renderhtml(){
     menu.innerHTML = getmenuhtml(menuArray)
+}
+
+function rendertotal(){
+    console.log(orderitems)
+    let total = orderitems.reduce((a,b)=>{return a + b.price},0) 
+    console.log(total)
+    totalel.innerHTML = `Total pay $ ` + total
 }
 
 renderhtml()
