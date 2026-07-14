@@ -35,6 +35,13 @@ function renderorder(items){
    ul.innerHTML += html
 }
 
+function rendertotal(){
+    console.log(orderitems)
+    let total = orderitems.reduce((a,b)=>{return a + b.price},0) 
+    console.log(total)
+    totalel.innerHTML = '<div class="order-items"><p>Total pay </p></div>' + total
+}
+
 function getmenuhtml(menuarr){
     let html = menuarr.map(item => {
         return `<div id="menuitems">
@@ -56,11 +63,6 @@ function renderhtml(){
     menu.innerHTML = getmenuhtml(menuArray)
 }
 
-function rendertotal(){
-    console.log(orderitems)
-    let total = orderitems.reduce((a,b)=>{return a + b.price},0) 
-    console.log(total)
-    totalel.innerHTML = `Total pay $ ` + total
-}
+
 
 renderhtml()
